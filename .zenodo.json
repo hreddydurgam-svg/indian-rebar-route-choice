@@ -1,0 +1,13 @@
+{
+  "title": "Supplementary code and data: Route-specific carbon baselines and plant choice under capital and scrap limits for decarbonizing Indian steel rebar",
+  "upload_type": "software",
+  "description": "Seven Python scripts and all output tables and figures used in the article \"Route-specific carbon baselines and plant choice under capital and scrap limits for decarbonizing Indian steel rebar\". Scripts are licensed under the MIT License; the output tables and figures are licensed under CC BY 4.0 (see LICENSE-DATA.md). See README.md and RUN_ORDER.txt.",
+  "creators": [
+    {"name": "Durgam, Himasai Kiran Reddy", "affiliation": "School of Civil Engineering, Vellore Institute of Technology, Vellore, India"},
+    {"name": "Ramani, Prasanna Venkatesan", "affiliation": "School of Civil Engineering, Vellore Institute of Technology, Vellore, India"}
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "version": "1.0.0",
+  "keywords": ["steel rebar", "India", "environmental product declaration", "hydrogen direct reduction", "scrap", "QAOA emulation"]
+}
