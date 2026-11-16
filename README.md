@@ -5,6 +5,7 @@ Supplementary Information for the article
 (Himasai Kiran Reddy Durgam and Prasanna Venkatesan Ramani, School of Civil Engineering, Vellore Institute of Technology, India).
 
 The folder holds the seven Python scripts of the study and every table and figure they wrote.
+`SUPPLEMENTARY_INFORMATION.md` gives the list of supplementary items, Table S2, Table S3 and the QAOA settings.
 All numbers in the article come from these output files or from the cited source documents.
 
 ## How to run
@@ -33,7 +34,7 @@ Example: `!python -X utf8 phase2_route_estimates_colab.py`
 **Step III, `outputs_phase3/`**
 - `plant_inputs.csv`, `scenario_table.csv`, `sweep_scrap.csv`, `sweep_grid.csv`, `plant_breakeven.csv`, `route_sensitivity.csv`, `route_vs_epd_evidence.csv`.
 - `mass_energy_balance.csv`, `mass_energy_balance_sweep.csv`, `balance_checks.csv` (Table S2 uses `mass_energy_balance.csv` and `scenario_table.csv`).
-- `fig_scrap_sweep.tiff` / `.pdf`: Fig. 3. `fig_grid_sweep.tiff` / `.pdf`: Figure S2.
+- `fig_scrap_sweep.tiff` / `.pdf`: Fig. 3. `fig_grid_sweep.tiff` / `.pdf`: Figure S1.
 
 **Step IV, `outputs_phase4/`**
 - `twolimit_plant_options.csv`, `twolimit_decisions.csv`, `twolimit_summary.csv`, `twolimit_uncertainty_plans.csv`, `twolimit_uncertainty_summary.csv`, `twolimit_flip_thresholds.csv`.
