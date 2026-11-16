@@ -1,0 +1,25 @@
+route,case,n_epd,prior_used,mu_post,sd_post,ci90_lower,ci90_upper
+ore-based,prior_SD_10pct,4,yes,2.287622,0.104650,2.115487,2.459756
+ore-based,prior_SD_30pct (main),4,yes,2.556431,0.127402,2.346874,2.765988
+ore-based,prior_SD_50pct,4,yes,2.589581,0.129932,2.375862,2.803299
+ore-based,EPD_SD_5pct,4,yes,2.595548,0.065191,2.488319,2.702778
+ore-based,EPD_SD_20pct,4,yes,2.429906,0.234488,2.044207,2.815605
+ore-based,EPDs_equal_SD,4,yes,2.629620,0.130201,2.415459,2.843781
+ore-based,without_Tata_Steel_rebar_S-P-05018,3,yes,2.508770,0.144091,2.271761,2.745779
+ore-based,without_JSW_Vijayanagar_TMT_S-P-04326,3,yes,2.608741,0.149848,2.362263,2.855219
+ore-based,without_JSW_Dolvi_TMT_S-P-04326,3,yes,2.430500,0.138486,2.202712,2.658289
+ore-based,without_SAIL_Bhilai_TMT_EPD-IES-0031470,3,yes,2.635701,0.151271,2.386882,2.884519
+ore-based,no_prior (EPDs only),4,no,2.609423,0.131423,2.393252,2.825594
+ore-based,no_prior_EPDs_equal_SD (plain average),4,no,2.690040,0.134502,2.468804,2.911276
+scrap,prior_SD_10pct,3,yes,0.596796,0.032873,0.542724,0.650868
+scrap,prior_SD_30pct (main),3,yes,0.559219,0.033414,0.504258,0.614180
+scrap,prior_SD_50pct,3,yes,0.556105,0.033459,0.501071,0.611139
+scrap,EPD_SD_5pct,3,yes,0.555568,0.016733,0.528044,0.583091
+scrap,EPD_SD_20pct,3,yes,0.573599,0.066417,0.464353,0.682844
+scrap,EPDs_equal_SD,3,yes,0.682264,0.038938,0.618217,0.746312
+scrap,without_ARS_TMT_EPD-IES-0012057,2,yes,0.543893,0.040478,0.477312,0.610474
+scrap,without_Prakash_Ferrous_TMT_EPD-IES-0024699,2,yes,0.503832,0.035488,0.445460,0.562205
+scrap,without_Jindal_TMT_100pct_scrap_EPD-IES-0008168 (special case out),2,yes,0.706861,0.050594,0.623642,0.790080
+scrap,no_prior (EPDs only),3,no,0.554346,0.033484,0.499270,0.609421
+scrap,no_prior_EPDs_equal_SD (plain average),3,no,0.676333,0.039048,0.612105,0.740562
+scrap,no_prior_without_special_case,2,no,0.697045,0.050836,0.613428,0.780663

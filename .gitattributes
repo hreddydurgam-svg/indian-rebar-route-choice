@@ -1,0 +1,2 @@
+# Store every file byte-for-byte (no line-ending conversion), so the outputs match the Colab run exactly.
+* -text

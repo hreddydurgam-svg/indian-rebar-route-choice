@@ -1,0 +1,3 @@
+electricity,n_limit_cases,n_distinct_best_plans,n_best_plan_converts_nothing,n_best_plan_mixes_scrap_shares,n_best_plan_uses_S0,n_best_plan_uses_S50,n_best_plan_uses_S95,n_scrap_limit_changes_plan,n_scrap_limit_lowers_abatement,n_capital_limit_changes_plan,n_capital_limit_lowers_abatement,n_binding_capital_only,n_binding_scrap_only,n_binding_both,n_binding_joint,n_binding_none,n_greedy_not_optimal,greedy_largest_shortfall_pct,greedy_mean_shortfall_pct_all_cases,greedy_mean_shortfall_pct_nonoptimal_cases,n_converted_plants_not_top_GEI,n_cases_with_tied_best_plans,largest_n_tied_best
+India grid,50,12,1,12,0,29,32,44,44,13,13,6,37,7,0,0,26,21.629951,6.288013,12.092333,14,0,1
+Renewable,50,34,1,34,28,35,31,44,27,33,33,6,0,27,0,17,29,37.183410,8.583116,14.798477,26,31,79

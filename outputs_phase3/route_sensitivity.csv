@@ -1,0 +1,4 @@
+case,grid_tCO2_per_MWh,I_scrap0_tCO2_per_t,I_scrap50_tCO2_per_t,I_scrap95_tCO2_per_t,breakeven_scrap_share_Jamshedpur,breakeven_scrap_share_Vijayanagar,breakeven_scrap_share_Dolvi,breakeven_scrap_share_Bhilai
+"main (CEA Version 20.0, FY 2023-24; with pelletizing and rolling)",0.727,2.808160,1.785635,0.865362,0.217677,0.093083,0.042033,below 0 (route is lower than the plant at every scrap share)
+"grid 0.710 (reported for CEA Version 21.0, FY 2024-25; document not read; UNVERIFIED, sensitivity only)",0.710,2.746620,1.748005,0.849252,0.192076,0.064499,0.012227,below 0 (route is lower than the plant at every scrap share)
+"main grid, without pelletizing and rolling terms (boundary of the Vogl et al. energy figure)",0.727,2.582960,1.560434,0.640162,0.107557,below 0 (route is lower than the plant at every scrap share),below 0 (route is lower than the plant at every scrap share),below 0 (route is lower than the plant at every scrap share)

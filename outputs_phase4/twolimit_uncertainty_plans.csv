@@ -1,0 +1,4 @@
+limit_case,f_B,f_S,best_plan,best_plan_words,n_draws_best,share_of_draws,is_deterministic_best_plan,capital_million_EUR,scrap_Mt,mean_abatement_when_best_Mt_per_yr
+"India grid, f_B=0.50, f_S=0.25",0.50,0.25,NN55,D:S50 + B:S50,2000,1.000000,1,5525.793091,7.818197,16.104083
+"India grid, f_B=0.50, f_S=0.50",0.50,0.50,N559,V:S50 + D:S50 + B:S95,2000,1.000000,1,8979.131588,16.755825,31.327034
+"India grid, f_B=0.50, f_S=1.00",0.50,1.00,9959,J:S95 + V:S95 + D:S50 + B:S95,2000,1.000000,1,9096.963054,32.945282,58.208298

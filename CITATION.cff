@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "Supplementary code and data: Route-specific carbon baselines and plant choice under capital and scrap limits for decarbonizing Indian steel rebar"
+type: software
+authors:
+  - family-names: Durgam
+    given-names: Himasai Kiran Reddy
+    affiliation: "School of Civil Engineering, Vellore Institute of Technology, Vellore, India"
+  - family-names: Ramani
+    given-names: Prasanna Venkatesan
+    affiliation: "School of Civil Engineering, Vellore Institute of Technology, Vellore, India"
+repository-code: "https://github.com/hreddydurgam-svg/indian-rebar-route-choice"
+license:
+  - MIT
+  - CC-BY-4.0
+version: "1.0.0"

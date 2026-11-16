@@ -1,0 +1,4 @@
+package,version
+python,3.13.18
+numpy,2.4.6
+matplotlib,3.10.0

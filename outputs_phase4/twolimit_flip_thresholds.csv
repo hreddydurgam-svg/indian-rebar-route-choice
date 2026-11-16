@@ -1,0 +1,13 @@
+limit_case,f_B,f_S,input_moved,unit,central_value,direction,grid_step,search_limit,best_plan_at_central,abatement_at_central_Mt_per_yr,runner_up_plan_at_central,runner_up_abatement_Mt_per_yr,gap_best_minus_runner_up_Mt_per_yr,gap_pct_of_best,first_grid_value_where_plan_changes,change_from_central,change_from_central_pct,new_best_plan,new_best_plan_abatement_there_Mt_per_yr
+"India grid, f_B=0.50, f_S=0.25",0.50,0.25,grid factor,t CO2/MWh,0.727000,up,0.000100,1.454000,NN55,16.075509,NNN9,12.958284,3.117225,19.391146,0.843000,0.116000,15.955983,NNN9,12.334429
+"India grid, f_B=0.50, f_S=0.25",0.50,0.25,grid factor,t CO2/MWh,0.727000,down,0.000100,0.000000,NN55,16.075509,NNN9,12.958284,3.117225,19.391146,0.454400,-0.272600,-37.496561,N50N,24.874926
+"India grid, f_B=0.50, f_S=0.25",0.50,0.25,electricity need at 0% scrap,MWh/t,3.480000,up,0.001000,6.960000,NN55,16.075509,NNN9,12.958284,3.117225,19.391146,4.092000,0.612000,17.586207,NNN9,12.832033
+"India grid, f_B=0.50, f_S=0.25",0.50,0.25,electricity need at 0% scrap,MWh/t,3.480000,down,0.001000,0.667000,NN55,16.075509,NNN9,12.958284,3.117225,19.391146,2.180000,-1.300000,-37.356322,N50N,22.967356
+"India grid, f_B=0.50, f_S=0.50",0.50,0.50,grid factor,t CO2/MWh,0.727000,up,0.000100,1.454000,N559,31.067525,N950,30.845538,0.221987,0.714532,0.769300,0.042300,5.818432,NN99,28.908578
+"India grid, f_B=0.50, f_S=0.50",0.50,0.50,grid factor,t CO2/MWh,0.727000,down,0.000100,0.000000,N559,31.067525,N950,30.845538,0.221987,0.714532,0.131100,-0.595900,-81.966988,95N0,61.503085
+"India grid, f_B=0.50, f_S=0.50",0.50,0.50,electricity need at 0% scrap,MWh/t,3.480000,up,0.001000,6.960000,N559,31.067525,N950,30.845538,0.221987,0.714532,3.700000,0.220000,6.321839,NN99,29.376428
+"India grid, f_B=0.50, f_S=0.50",0.50,0.50,electricity need at 0% scrap,MWh/t,3.480000,down,0.001000,0.667000,N559,31.067525,N950,30.845538,0.221987,0.714532,no change inside the search limit,,,,
+"India grid, f_B=0.50, f_S=1.00",0.50,1.00,grid factor,t CO2/MWh,0.727000,up,0.000100,1.454000,9959,57.901015,5999,56.245804,1.655211,2.858691,1.013100,0.286100,39.353508,999N,44.638456
+"India grid, f_B=0.50, f_S=1.00",0.50,1.00,grid factor,t CO2/MWh,0.727000,down,0.000100,0.000000,9959,57.901015,5999,56.245804,1.655211,2.858691,no change inside the search limit,,,,
+"India grid, f_B=0.50, f_S=1.00",0.50,1.00,electricity need at 0% scrap,MWh/t,3.480000,up,0.001000,6.960000,9959,57.901015,5999,56.245804,1.655211,2.858691,5.007000,1.527000,43.879310,999N,51.397554
+"India grid, f_B=0.50, f_S=1.00",0.50,1.00,electricity need at 0% scrap,MWh/t,3.480000,down,0.001000,0.667000,9959,57.901015,5999,56.245804,1.655211,2.858691,no change inside the search limit,,,,

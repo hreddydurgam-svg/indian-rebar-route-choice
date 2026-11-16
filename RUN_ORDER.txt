@@ -1,0 +1,12 @@
+Run in Google Colab, one runtime, in this order:
+
+1. phase2_route_estimates_colab.py       -> outputs_phase2/
+2. phase3_route_model_colab.py           -> outputs_phase3/
+3. phase6_mass_energy_balance_colab.py   -> outputs_phase3/
+4. phase7_two_limit_selection_colab.py   -> outputs_phase4/
+5. phase8_twolimit_qaoa_colab.py         -> outputs_phase4/
+6. phase9_twolimit_figure_colab.py       -> outputs_phase4/fig_twolimit_plans_a and _b (draws only)
+7. phase10_unit_checks_colab.py          -> outputs_phase4/unit_checks.csv (two unit readings tested)
+
+No input file is needed. Each script reads only files written by the scripts before it.
+Scripts 6 and 7 read the tables of scripts 1 to 5 and change none of them.

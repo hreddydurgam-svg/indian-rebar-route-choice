@@ -1,0 +1,9 @@
+plant,GEI_version,GEI_tCO2e_per_t,breakeven_scrap_share_analytic_india_grid,breakeven_scrap_share_india_grid_text,breakeven_grid_gCO2_per_kWh_scrap0,breakeven_grid_gCO2_per_kWh_scrap50,breakeven_grid_gCO2_per_kWh_scrap95
+Tata Steel Jamshedpur,rev2026 (main),2.3630,0.217677,0.217677,604.028,987.838,2307.371
+JSW Steel Vijayanagar,rev2026 (main),2.6178,0.093083,0.093083,674.414,1102.950,2576.247
+JSW Steel Dolvi,rev2026 (main),2.7222,0.042033,0.042033,703.254,1150.115,2686.414
+SAIL Bhilai,rev2026 (main),3.1487,-0.166519,below 0 (route is lower than the plant at every scrap share),821.072,1342.796,3136.474
+Tata Steel Jamshedpur,draft2025 (sensitivity),2.3804,0.209168,0.209168,608.834,995.699,2325.732
+JSW Steel Vijayanagar,draft2025 (sensitivity),2.6293,0.087460,0.087460,677.591,1108.145,2588.382
+JSW Steel Dolvi,draft2025 (sensitivity),2.6662,0.069416,0.069416,687.785,1124.816,2627.320
+SAIL Bhilai,draft2025 (sensitivity),3.1487,-0.166519,below 0 (route is lower than the plant at every scrap share),821.072,1342.796,3136.474

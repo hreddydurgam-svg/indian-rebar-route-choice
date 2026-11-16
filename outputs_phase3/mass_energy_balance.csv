@@ -1,0 +1,109 @@
+scrap_share,group,stream,value,unit,source_tag
+0.00,input,iron ore pellets (iron-balance scaling M),1504.983248,kg/tLS,"COMPUTED from VERIFIED compositions; s=0, 0.5 printed as 1504, 738"
+0.00,input,scrap (iron-balance scaling M),0.000000,kg/tLS,COMPUTED; s=0.5 printed as 536
+0.00,input,iron ore pellets (proportional scaling P),1504.000000,kg/tLS,ASSUMPTION 1504 x (1 - s)
+0.00,input,scrap (proportional scaling P),0.000000,kg/tLS,ASSUMPTION 1072 x s
+0.00,input,lime (CaO),50.000000,kg/tLS,VERIFIED p3; per tLS at every scrap share
+0.00,input,graphite electrodes,2.000000,kg/tLS,VERIFIED p4; per tLS at every scrap share
+0.00,input,alloys,11.000000,kg/tLS,VERIFIED p4 (cost model); not in Vogl's mass balance
+0.00,input,carbon added to EAF,,kg/tLS,NOT IN SOURCE (main text)
+0.00,internal loop,hydrogen consumed (scaling M),51.000000,kg/tLS,"COMPUTED 51 x ore ratio; s=0, 0.5 printed as 51, 25"
+0.00,internal loop,hydrogen consumed (scaling P),51.000000,kg/tLS,ASSUMPTION 51 x (1 - s)
+0.00,internal loop,"water from reduction, returned to electrolyser",455.736607,kg/tLS,COMPUTED stoichiometry; no water crosses the boundary (p2)
+0.00,output,liquid steel,1000.000000,kg/tLS,basis; contains only iron (VERIFIED p3)
+0.00,output,oxygen from electrolyser,404.736607,kg/tLS,COMPUTED from hydrogen; s=0 printed as 411
+0.00,output,slag: inert from pellets and scrap + lime (lower bound),125.249162,kg/tLS,COMPUTED; slag total NOT IN SOURCE -> not closed
+0.00,output,oxygen left in FeO of the HBI (fate in EAF not stated),24.997478,kg/tLS,COMPUTED remainder; depends on hydrogen figure
+0.00,output,"CO2 from lime (calcination, 1 mol per mol CaO)",39.239795,kg/tLS,COMPUTED from VERIFIED p3
+0.00,output,CO2 from electrodes,7.328116,kg/tLS,COMPUTED from VERIFIED p3-4
+0.00,output,CO2 from added carbon,,kg/tLS,NOT IN SOURCE (carbon mass missing)
+0.00,iron,iron in pellets (M),1000.000000,kg Fe/tLS,COMPUTED 95 % hematite
+0.00,iron,iron in scrap (M),0.000000,kg Fe/tLS,COMPUTED 95 % iron
+0.00,electricity,electrolyser (hydrogen x LHV / 0.72),2.361892,MWh/tLS,COMPUTED from VERIFIED p3-4
+0.00,electricity,EAF (linear 0.753 -> 0.667),0.753000,MWh/tLS,"VERIFIED p3, p5"
+0.00,electricity,"ore heating, shaft, hydrogen heating (remainder x ore ratio)",0.365108,MWh/tLS,IMPLIED remainder; no printed number
+0.00,electricity,"total, bottom-up (M)",3.480000,MWh/tLS,COMPUTED
+0.00,electricity,"total, straight line of the route model",3.480000,MWh/tLS,phase3_route_model_colab.py
+0.00,electricity,bottom-up minus straight line,0.000000,MWh/tLS,COMPUTED
+0.00,heat (information),"reaction heat of reduction, Eq. 2, full reduction of the ore iron",0.247461,MWh/tLS,"COMPUTED from VERIFIED p3; part of the remainder, not added"
+0.50,input,iron ore pellets (iron-balance scaling M),738.316807,kg/tLS,"COMPUTED from VERIFIED compositions; s=0, 0.5 printed as 1504, 738"
+0.50,input,scrap (iron-balance scaling M),536.230093,kg/tLS,COMPUTED; s=0.5 printed as 536
+0.50,input,iron ore pellets (proportional scaling P),752.000000,kg/tLS,ASSUMPTION 1504 x (1 - s)
+0.50,input,scrap (proportional scaling P),536.000000,kg/tLS,ASSUMPTION 1072 x s
+0.50,input,lime (CaO),50.000000,kg/tLS,VERIFIED p3; per tLS at every scrap share
+0.50,input,graphite electrodes,2.000000,kg/tLS,VERIFIED p4; per tLS at every scrap share
+0.50,input,alloys,11.000000,kg/tLS,VERIFIED p4 (cost model); not in Vogl's mass balance
+0.50,input,carbon added to EAF,,kg/tLS,NOT IN SOURCE (main text)
+0.50,internal loop,hydrogen consumed (scaling M),25.019652,kg/tLS,"COMPUTED 51 x ore ratio; s=0, 0.5 printed as 51, 25"
+0.50,internal loop,hydrogen consumed (scaling P),25.500000,kg/tLS,ASSUMPTION 51 x (1 - s)
+0.50,internal loop,"water from reduction, returned to electrolyser",223.575908,kg/tLS,COMPUTED stoichiometry; no water crosses the boundary (p2)
+0.50,output,liquid steel,1000.000000,kg/tLS,basis; contains only iron (VERIFIED p3)
+0.50,output,oxygen from electrolyser,198.556256,kg/tLS,COMPUTED from hydrogen; s=0 printed as 411
+0.50,output,slag: inert from pellets and scrap + lime (lower bound),113.727345,kg/tLS,COMPUTED; slag total NOT IN SOURCE -> not closed
+0.50,output,oxygen left in FeO of the HBI (fate in EAF not stated),12.263298,kg/tLS,COMPUTED remainder; depends on hydrogen figure
+0.50,output,"CO2 from lime (calcination, 1 mol per mol CaO)",39.239795,kg/tLS,COMPUTED from VERIFIED p3
+0.50,output,CO2 from electrodes,7.328116,kg/tLS,COMPUTED from VERIFIED p3-4
+0.50,output,CO2 from added carbon,,kg/tLS,NOT IN SOURCE (carbon mass missing)
+0.50,iron,iron in pellets (M),490.581412,kg Fe/tLS,COMPUTED 95 % hematite
+0.50,iron,iron in scrap (M),509.418588,kg Fe/tLS,COMPUTED 95 % iron
+0.50,electricity,electrolyser (hydrogen x LHV / 0.72),1.158700,MWh/tLS,COMPUTED from VERIFIED p3-4
+0.50,electricity,EAF (linear 0.753 -> 0.667),0.710000,MWh/tLS,"VERIFIED p3, p5"
+0.50,electricity,"ore heating, shaft, hydrogen heating (remainder x ore ratio)",0.179115,MWh/tLS,IMPLIED remainder; no printed number
+0.50,electricity,"total, bottom-up (M)",2.047816,MWh/tLS,COMPUTED
+0.50,electricity,"total, straight line of the route model",2.073500,MWh/tLS,phase3_route_model_colab.py
+0.50,electricity,bottom-up minus straight line,-0.025684,MWh/tLS,COMPUTED
+0.50,heat (information),"reaction heat of reduction, Eq. 2, full reduction of the ore iron",0.121400,MWh/tLS,"COMPUTED from VERIFIED p3; part of the remainder, not added"
+0.95,input,iron ore pellets (iron-balance scaling M),72.600845,kg/tLS,"COMPUTED from VERIFIED compositions; s=0, 0.5 printed as 1504, 738"
+0.95,input,scrap (iron-balance scaling M),1001.852314,kg/tLS,COMPUTED; s=0.5 printed as 536
+0.95,input,iron ore pellets (proportional scaling P),75.200000,kg/tLS,ASSUMPTION 1504 x (1 - s)
+0.95,input,scrap (proportional scaling P),1018.400000,kg/tLS,ASSUMPTION 1072 x s
+0.95,input,lime (CaO),50.000000,kg/tLS,VERIFIED p3; per tLS at every scrap share
+0.95,input,graphite electrodes,2.000000,kg/tLS,VERIFIED p4; per tLS at every scrap share
+0.95,input,alloys,11.000000,kg/tLS,VERIFIED p4 (cost model); not in Vogl's mass balance
+0.95,input,carbon added to EAF,,kg/tLS,NOT IN SOURCE (main text)
+0.95,internal loop,hydrogen consumed (scaling M),2.460255,kg/tLS,"COMPUTED 51 x ore ratio; s=0, 0.5 printed as 51, 25"
+0.95,internal loop,hydrogen consumed (scaling P),2.550000,kg/tLS,ASSUMPTION 51 x (1 - s)
+0.95,internal loop,"water from reduction, returned to electrolyser",21.984871,kg/tLS,COMPUTED stoichiometry; no water crosses the boundary (p2)
+0.95,output,liquid steel,1000.000000,kg/tLS,basis; contains only iron (VERIFIED p3)
+0.95,output,oxygen from electrolyser,19.524616,kg/tLS,COMPUTED from hydrogen; s=0 printed as 411
+0.95,output,slag: inert from pellets and scrap + lime (lower bound),103.722658,kg/tLS,COMPUTED; slag total NOT IN SOURCE -> not closed
+0.95,output,oxygen left in FeO of the HBI (fate in EAF not stated),1.205886,kg/tLS,COMPUTED remainder; depends on hydrogen figure
+0.95,output,"CO2 from lime (calcination, 1 mol per mol CaO)",39.239795,kg/tLS,COMPUTED from VERIFIED p3
+0.95,output,CO2 from electrodes,7.328116,kg/tLS,COMPUTED from VERIFIED p3-4
+0.95,output,CO2 from added carbon,,kg/tLS,NOT IN SOURCE (carbon mass missing)
+0.95,iron,iron in pellets (M),48.240301,kg Fe/tLS,COMPUTED 95 % hematite
+0.95,iron,iron in scrap (M),951.759699,kg Fe/tLS,COMPUTED 95 % iron
+0.95,electricity,electrolyser (hydrogen x LHV / 0.72),0.113938,MWh/tLS,COMPUTED from VERIFIED p3-4
+0.95,electricity,EAF (linear 0.753 -> 0.667),0.671300,MWh/tLS,"VERIFIED p3, p5"
+0.95,electricity,"ore heating, shaft, hydrogen heating (remainder x ore ratio)",0.017613,MWh/tLS,IMPLIED remainder; no printed number
+0.95,electricity,"total, bottom-up (M)",0.802851,MWh/tLS,COMPUTED
+0.95,electricity,"total, straight line of the route model",0.807650,MWh/tLS,phase3_route_model_colab.py
+0.95,electricity,bottom-up minus straight line,-0.004799,MWh/tLS,COMPUTED
+0.95,heat (information),"reaction heat of reduction, Eq. 2, full reduction of the ore iron",0.011938,MWh/tLS,"COMPUTED from VERIFIED p3; part of the remainder, not added"
+1.00,input,iron ore pellets (iron-balance scaling M),0.000000,kg/tLS,"COMPUTED from VERIFIED compositions; s=0, 0.5 printed as 1504, 738"
+1.00,input,scrap (iron-balance scaling M),1052.631579,kg/tLS,COMPUTED; s=0.5 printed as 536
+1.00,input,iron ore pellets (proportional scaling P),0.000000,kg/tLS,ASSUMPTION 1504 x (1 - s)
+1.00,input,scrap (proportional scaling P),1072.000000,kg/tLS,ASSUMPTION 1072 x s
+1.00,input,lime (CaO),50.000000,kg/tLS,VERIFIED p3; per tLS at every scrap share
+1.00,input,graphite electrodes,2.000000,kg/tLS,VERIFIED p4; per tLS at every scrap share
+1.00,input,alloys,11.000000,kg/tLS,VERIFIED p4 (cost model); not in Vogl's mass balance
+1.00,input,carbon added to EAF,,kg/tLS,NOT IN SOURCE (main text)
+1.00,internal loop,hydrogen consumed (scaling M),0.000000,kg/tLS,"COMPUTED 51 x ore ratio; s=0, 0.5 printed as 51, 25"
+1.00,internal loop,hydrogen consumed (scaling P),0.000000,kg/tLS,ASSUMPTION 51 x (1 - s)
+1.00,internal loop,"water from reduction, returned to electrolyser",0.000000,kg/tLS,COMPUTED stoichiometry; no water crosses the boundary (p2)
+1.00,output,liquid steel,1000.000000,kg/tLS,basis; contains only iron (VERIFIED p3)
+1.00,output,oxygen from electrolyser,0.000000,kg/tLS,COMPUTED from hydrogen; s=0 printed as 411
+1.00,output,slag: inert from pellets and scrap + lime (lower bound),102.631579,kg/tLS,COMPUTED; slag total NOT IN SOURCE -> not closed
+1.00,output,oxygen left in FeO of the HBI (fate in EAF not stated),0.000000,kg/tLS,COMPUTED remainder; depends on hydrogen figure
+1.00,output,"CO2 from lime (calcination, 1 mol per mol CaO)",39.239795,kg/tLS,COMPUTED from VERIFIED p3
+1.00,output,CO2 from electrodes,7.328116,kg/tLS,COMPUTED from VERIFIED p3-4
+1.00,output,CO2 from added carbon,,kg/tLS,NOT IN SOURCE (carbon mass missing)
+1.00,iron,iron in pellets (M),0.000000,kg Fe/tLS,COMPUTED 95 % hematite
+1.00,iron,iron in scrap (M),1000.000000,kg Fe/tLS,COMPUTED 95 % iron
+1.00,electricity,electrolyser (hydrogen x LHV / 0.72),0.000000,MWh/tLS,COMPUTED from VERIFIED p3-4
+1.00,electricity,EAF (linear 0.753 -> 0.667),0.667000,MWh/tLS,"VERIFIED p3, p5"
+1.00,electricity,"ore heating, shaft, hydrogen heating (remainder x ore ratio)",0.000000,MWh/tLS,IMPLIED remainder; no printed number
+1.00,electricity,"total, bottom-up (M)",0.667000,MWh/tLS,COMPUTED
+1.00,electricity,"total, straight line of the route model",0.667000,MWh/tLS,phase3_route_model_colab.py
+1.00,electricity,bottom-up minus straight line,-0.000000,MWh/tLS,COMPUTED
+1.00,heat (information),"reaction heat of reduction, Eq. 2, full reduction of the ore iron",0.000000,MWh/tLS,"COMPUTED from VERIFIED p3; part of the remainder, not added"

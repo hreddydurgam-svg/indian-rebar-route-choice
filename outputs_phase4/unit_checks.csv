@@ -1,0 +1,15 @@
+check,item,result,main_reading,other_reading,value_main,value_other,unit
+capex reading,scrap share 0.00,ore share used for electrolyser and shaft,1 - s,pellets(s) / pellets(0),1.000000,1.000000,-
+capex reading,scrap share 0.00,capital cost,184 + (1 - s) x 390,184 + ratio x 390,574.000000,574.000000,EUR per tonne capacity
+capex reading,scrap share 0.50,ore share used for electrolyser and shaft,1 - s,pellets(s) / pellets(0),0.500000,0.490581,-
+capex reading,scrap share 0.50,capital cost,184 + (1 - s) x 390,184 + ratio x 390,379.000000,375.326751,EUR per tonne capacity
+capex reading,scrap share 0.95,ore share used for electrolyser and shaft,1 - s,pellets(s) / pellets(0),0.050000,0.048240,-
+capex reading,scrap share 0.95,capital cost,184 + (1 - s) x 390,184 + ratio x 390,203.500000,202.813717,EUR per tonne capacity
+capex reading,all limit cases,number of cases,,,100,,cases
+capex reading,all limit cases,cases in which the best plan changes,,,0,2,cases
+capex reading,main case,best plan,NN55,NN55,,,plan code
+capex reading,"India grid, f_B=0.30, f_S=1.00",best plan changes,N999,999N,50.066036,53.137560,Mt CO2e/yr
+capex reading,"Renewable, f_B=0.30, f_S=1.00",best plan changes,99N9,999N,68.932892,74.734376,Mt CO2e/yr
+scrap unit reading,main case,scrap limit,million metric tonnes,million short tons,8.550000,7.756430,Mt
+scrap unit reading,main case,scrap used by the best plan / scrap limit,,,0.914409,1.007963,-
+scrap unit reading,main case,best plan fits the scrap limit,,,yes,no,

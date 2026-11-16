@@ -1,0 +1,7 @@
+scrap_share,electricity,grid_gCO2_per_kWh,SEC_MWh_per_t,I_new_tCO2_per_t
+0.0,Renewable,0.000000,3.480000,0.176420
+0.0,India grid,727.000000,3.480000,2.808160
+0.5,Renewable,0.000000,2.073500,0.176420
+0.5,India grid,727.000000,2.073500,1.785635
+0.95,Renewable,0.000000,0.807650,0.176420
+0.95,India grid,727.000000,0.807650,0.865362

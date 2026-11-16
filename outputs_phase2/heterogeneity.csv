@@ -1,0 +1,5 @@
+group,k,min_value,max_value,weighted_mean_no_prior,cochran_Q,df,p_value_chi2,I2,epd_rel_sd_assumed
+all seven values (both routes),7,0.445000,3.250000,0.679613,261.294004,6,1.579592e-53,0.977037,0.100000
+ore-based group,4,2.363000,3.250000,2.609423,5.771443,3,1.232752e-01,0.480199,0.100000
+scrap group,3,0.445000,0.992000,0.554346,25.906739,2,2.368225e-06,0.922800,0.100000
+scrap group without the special case,2,0.592000,0.992000,0.697045,11.989258,1,5.350810e-04,0.916592,0.100000

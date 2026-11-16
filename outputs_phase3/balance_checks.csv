@@ -1,0 +1,68 @@
+check,expected,obtained,difference,relative_difference_pct,unit,status,note
+"iron balance, 0% scrap (printed 1504 kg pellets)",1000.000000,999.346672,-0.653328,-0.0653,kg Fe/tLS,pass,expected = iron in 1 t steel (steel = iron only); obtained = iron in pellets at 95 % hematite
+"iron balance, 50% scrap (printed 738 kg pellets + 536 kg scrap)",1000.000000,999.570907,-0.429093,-0.0429,kg Fe/tLS,pass,"pellets 95 % hematite, scrap 95 % iron"
+iron content of pellets: implied by 1504 kg/tLS vs stated composition,0.664459,0.664894,0.000434,0.0654,kg Fe/kg pellet,pass,"stated: 95 % of pure hematite (69.94 % Fe) = 66.45 % Fe; implied below 69.94 %, so physically possible"
+scaling P vs printed 50% row: pellets,738.000000,752.000000,14.000000,1.8970,kg/tLS,fail,P = 1504 x (1 - s)
+scaling P vs printed 50% row: hydrogen,25.000000,25.500000,0.500000,2.0000,kg/tLS,fail,P = 51 x (1 - s); printed value has 2 digits (24.5-25.5)
+scaling P vs printed 50% row: scrap,536.000000,536.000000,0.000000,0.0000,kg/tLS,pass,zero by construction (1072 x s is fitted to this row)
+scaling M vs printed 0% row: pellets,1504.000000,1504.983248,0.983248,0.0654,kg/tLS,pass,M = iron balance; metallisation implied from the 50% row
+scaling M vs printed 50% row: pellets,738.000000,738.316807,0.316807,0.0429,kg/tLS,pass,M
+scaling M vs printed 50% row: scrap,536.000000,536.230093,0.230093,0.0429,kg/tLS,pass,M
+scaling M vs printed 50% row: hydrogen,25.000000,25.019652,0.019652,0.0786,kg/tLS,pass,M; printed value has 2 digits
+iron balance of scaling P at 0% scrap,1000.000000,999.346672,-0.653328,-0.0653,kg Fe/tLS,pass,P = 1504 x (1 - s) pellets and 1072 x s scrap (comparison only; the plant-choice model now uses the iron-balance scaling M)
+iron balance of scaling P at 50% scrap,1000.000000,1008.873336,8.873336,0.8873,kg Fe/tLS,pass,P = 1504 x (1 - s) pellets and 1072 x s scrap (comparison only; the plant-choice model now uses the iron-balance scaling M)
+iron balance of scaling P at 95% scrap,1000.000000,1017.447334,17.447334,1.7447,kg Fe/tLS,fail,P = 1504 x (1 - s) pellets and 1072 x s scrap (comparison only; the plant-choice model now uses the iron-balance scaling M)
+iron balance of scaling P at 100% scrap,1000.000000,1018.400000,18.400000,1.8400,kg Fe/tLS,fail,P = 1504 x (1 - s) pellets and 1072 x s scrap (comparison only; the plant-choice model now uses the iron-balance scaling M)
+scrap per tLS at 95% scrap: 1.072 x s vs iron-balance scaling M,1001.852314,1018.400000,16.547686,1.6517,kg/tLS,fail,expected = M; obtained = 1072 x s
+scrap per tLS at 100% scrap: 1.072 x s vs 1000 / 0.95,1052.631579,1072.000000,19.368421,1.8400,kg/tLS,fail,pure scrap at 95 % iron needs 1052.6 kg; 1072 kg carries more iron than the steel holds
+hydrogen: stoichiometric need per t iron (Fe2O3 + 3H2) vs printed 51 kg/tLS,54.149879,51.000000,-3.149879,-5.8170,kg H2,fail,ratio obtained/expected = share of full reduction; below 1 because the HBI is not fully metallised
+hydrogen: need for the iron in 1504 kg pellets at implied metallisation (a) vs printed 51,51.872901,51.000000,-0.872901,-1.6828,kg H2/tLS,fail,metallisation (a) = 0.9379 from the 50% row masses [IMPLIED]
+hydrogen: implied by 411 kg oxygen vs printed 51,51.789237,51.000000,-0.789237,-1.5239,kg H2/tLS,fail,expected = 411 x 2.016 / 15.999; one H2 per O atom
+oxygen from electrolyser: from 51 kg hydrogen vs printed 411,411.000000,404.736607,-6.263393,-1.5239,kg O2/tLS,fail,"same comparison, other direction"
+hydrogen ratio 50% / 0% vs pellet ratio 738 / 1504,0.490691,0.490196,-0.000495,-0.1010,-,pass,hydrogen follows the ore
+metallisation implied by oxygen (b) vs implied by masses (a),0.937865,0.935546,-0.002319,-0.2473,-,pass,both IMPLIED; the paper prints no base-case value
+metallisation implied by hydrogen (c) vs implied by masses (a),0.937865,0.913669,-0.024196,-2.5799,-,fail,both IMPLIED; (c) rests on the 2-digit figure 51
+total: 5.22 TWh/y / 1.5 Mt/y vs printed 3.48,3.480000,3.480000,0.000000,0.0000,MWh/tLS,pass,"plant example, PDF page 8"
+total: Germany 103.0 TWh / 29.5 Mt vs printed 3.48,3.480000,3.491525,0.011525,0.3312,MWh/tLS,pass,PDF page 4; 'about'
+total: Sweden 10.8 TWh / 3.1 Mt vs printed 3.48,3.480000,3.483871,0.003871,0.1112,MWh/tLS,pass,PDF page 4; 'about'
+EAF: 129 MW x 8760 h / 1.5 Mt vs printed 0.753,0.753000,0.753360,0.000360,0.0478,MWh/tLS,pass,8760 h/y is an assumption
+electrolyser: 51 kg x LHV / 0.72 vs 'two thirds' of 3.48,2.320000,2.361892,0.041892,1.8057,MWh/tLS,fail,LHV 33.344 kWh/kg from Eq. 1; 46.312 kWh/kg electricity; 'two thirds' is a rounded phrase
+electrolyser: 51 kg x LHV / 0.72 vs 411 MW x 8760 h / 1.5 Mt,2.400240,2.361892,-0.038348,-1.5977,MWh/tLS,fail,8760 h/y is an assumption
+electrolyser: 411 MW x 8760 h / 1.5 Mt vs 'two thirds' of 3.48,2.320000,2.400240,0.080240,3.4586,MWh/tLS,fail,
+sum of parts at 0% scrap vs 3.48 (electrolyser from 51 kg + EAF 0.753; ore heating and shaft missing),3.480000,3.114892,-0.365108,-10.4916,MWh/tLS,partial,"the difference is the energy for ore heating, shaft and hydrogen heating; the paper gives it only in Fig. 2 -> cannot close"
+"freed power, pure DRI -> pure scrap: 468 MW vs straight-line slope 3.48 - 0.667",2.813000,2.733120,-0.079880,-2.8397,MWh/tLS,fail,PDF page 9; 8760 h/y assumed
+freed power: 468 MW vs 3.48 - 0.753 (EAF power kept at the DRI value),2.727000,2.733120,0.006120,0.2244,MWh/tLS,pass,the 468 MW equals electrolyser + other upstream only
+straight line at 25% scrap vs value implied by Vogl's break-even pair 532 / 661,2.800847,2.776750,-0.024097,-0.8604,MWh/tLS,pass,expected = 3.48 x 532 / 661; valid only if Vogl's non-electric emissions are the same at 0 % and 25 % scrap [ASSUMPTION]
+bottom-up (M) at 25% scrap vs value implied by Vogl's break-even pair 532 / 661,2.800847,2.757303,-0.043544,-1.5547,MWh/tLS,fail,same assumption
+electricity at 0% scrap: bottom-up with scaling P vs straight line,3.480000,3.480000,0.000000,0.0000,MWh/tLS,pass,identical by algebra: both are linear in s with the same end points
+electricity at 50% scrap: bottom-up with scaling P vs straight line,2.073500,2.073500,0.000000,0.0000,MWh/tLS,pass,identical by algebra: both are linear in s with the same end points
+electricity at 95% scrap: bottom-up with scaling P vs straight line,0.807650,0.807650,-0.000000,-0.0000,MWh/tLS,pass,identical by algebra: both are linear in s with the same end points
+electricity at 100% scrap: bottom-up with scaling P vs straight line,0.667000,0.667000,-0.000000,-0.0000,MWh/tLS,pass,identical by algebra: both are linear in s with the same end points
+electricity at 0% scrap: bottom-up with scaling M vs straight line,3.480000,3.480000,0.000000,0.0000,MWh/tLS,pass,expected = straight line of the existing model; obtained = bottom-up
+electricity at 50% scrap: bottom-up with scaling M vs straight line,2.073500,2.047816,-0.025684,-1.2387,MWh/tLS,fail,expected = straight line of the existing model; obtained = bottom-up
+electricity at 95% scrap: bottom-up with scaling M vs straight line,0.807650,0.802851,-0.004799,-0.5942,MWh/tLS,pass,expected = straight line of the existing model; obtained = bottom-up
+electricity at 100% scrap: bottom-up with scaling M vs straight line,0.667000,0.667000,-0.000000,-0.0000,MWh/tLS,pass,expected = straight line of the existing model; obtained = bottom-up
+electricity at 50% scrap: bottom-up with printed ore ratio 738/1504 vs straight line,2.073500,2.048116,-0.025384,-1.2242,MWh/tLS,fail,uses only printed figures and the ore-ratio assumption
+"energy for ore heating, shaft and hydrogen heating, computed from heat capacities",,,,,,not possible,"heat capacities, condenser recovery and the Fig. 2 values are not in the main text"
+direct CO2: lime + electrodes vs printed 53 kg/tLS (added carbon missing),53.000000,46.567911,-6.432089,-12.1360,kg CO2/tLS,partial,carbon mass is not in the main text; the difference equals the CO2 from added carbon if the paper is consistent
+carbon added to the EAF,,,,,,not possible,"not printed; implied 3.511 kg/tLS if half becomes CO2 (PDF page 3) [IMPLIED, not a source value]"
+"overall mass at 0% scrap, printed figures: inputs (pellets, lime, electrodes) vs outputs (steel, 411 kg O2, inert + lime slag, electrode carbon)",1556.000000,1538.200000,-17.800000,-1.1440,kg/tLS,partial,"not counted: added carbon, alloys, oxygen left in FeO, air oxygen in CO2; slag total not in source"
+"overall mass at 50% scrap, printed figures: inputs vs outputs (oxygen computed from 25 kg hydrogen)",1326.000000,1314.100298,-11.899702,-0.8974,kg/tLS,partial,same omissions; no printed oxygen figure at 50 % scrap
+"phase 3 SEC reproduced by straight line, 0% scrap, Renewable",3.480000,3.480000,0.000000,0.0000,MWh/tLS,pass,scenario_table.csv
+"phase 3 route intensity reproduced with straight-line electricity, 0% scrap, Renewable",0.176420,0.176420,0.000000,0.0000,t CO2/tLS,pass,scenario_table.csv
+"route intensity with bottom-up (M) electricity vs phase 3 value, 0% scrap, Renewable",0.176420,0.176420,0.000000,0.0000,t CO2/tLS,pass,expected = existing model; obtained = bottom-up; both kept
+"phase 3 SEC reproduced by straight line, 0% scrap, India grid",3.480000,3.480000,0.000000,0.0000,MWh/tLS,pass,scenario_table.csv
+"phase 3 route intensity reproduced with straight-line electricity, 0% scrap, India grid",2.808160,2.808160,0.000000,0.0000,t CO2/tLS,pass,scenario_table.csv
+"route intensity with bottom-up (M) electricity vs phase 3 value, 0% scrap, India grid",2.808160,2.808160,0.000000,0.0000,t CO2/tLS,pass,expected = existing model; obtained = bottom-up; both kept
+"phase 3 SEC reproduced by straight line, 50% scrap, Renewable",2.073500,2.073500,0.000000,0.0000,MWh/tLS,pass,scenario_table.csv
+"phase 3 route intensity reproduced with straight-line electricity, 50% scrap, Renewable",0.176420,0.176420,0.000000,0.0000,t CO2/tLS,pass,scenario_table.csv
+"route intensity with bottom-up (M) electricity vs phase 3 value, 50% scrap, Renewable",0.176420,0.176420,0.000000,0.0000,t CO2/tLS,pass,expected = existing model; obtained = bottom-up; both kept
+"phase 3 SEC reproduced by straight line, 50% scrap, India grid",2.073500,2.073500,0.000000,0.0000,MWh/tLS,pass,scenario_table.csv
+"phase 3 route intensity reproduced with straight-line electricity, 50% scrap, India grid",1.785635,1.785635,-0.000001,-0.0000,t CO2/tLS,pass,scenario_table.csv
+"route intensity with bottom-up (M) electricity vs phase 3 value, 50% scrap, India grid",1.785635,1.766962,-0.018673,-1.0457,t CO2/tLS,fail,expected = existing model; obtained = bottom-up; both kept
+"phase 3 SEC reproduced by straight line, 95% scrap, Renewable",0.807650,0.807650,0.000000,0.0000,MWh/tLS,pass,scenario_table.csv
+"phase 3 route intensity reproduced with straight-line electricity, 95% scrap, Renewable",0.176420,0.176420,0.000000,0.0000,t CO2/tLS,pass,scenario_table.csv
+"route intensity with bottom-up (M) electricity vs phase 3 value, 95% scrap, Renewable",0.176420,0.176420,0.000000,0.0000,t CO2/tLS,pass,expected = existing model; obtained = bottom-up; both kept
+"phase 3 SEC reproduced by straight line, 95% scrap, India grid",0.807650,0.807650,0.000000,0.0000,MWh/tLS,pass,scenario_table.csv
+"phase 3 route intensity reproduced with straight-line electricity, 95% scrap, India grid",0.865362,0.865362,-0.000000,-0.0001,t CO2/tLS,pass,scenario_table.csv
+"route intensity with bottom-up (M) electricity vs phase 3 value, 95% scrap, India grid",0.865362,0.861873,-0.003489,-0.4032,t CO2/tLS,pass,expected = existing model; obtained = bottom-up; both kept
